@@ -1,0 +1,15 @@
+<ng-template [ngIf]="id === -1337">
+    <div class="not-found">
+        <h1>Post não encontrado</h1>
+        <a class="back-button error" [routerLink]="['']"><- Voltar a home</a>
+    </div>
+</ng-template>
+
+<ng-template [ngIf]="id !== -1337">
+    <a class="back-button" [routerLink]="['']"><- Voltar a home</a>
+    <div class="post-container">
+        <img src="{{ imgUrl }}" />
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+    </div>
+</ng-template>

@@ -1,0 +1,24 @@
+:host {
+    display: block;
+}
+
+.post-container {
+    display: flex;
+}
+
+.post-container .img-container {
+    min-width: 40%;
+}
+
+
+.post-container img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.post-container > h1 {
+    min-width: 60%;
+    font-size: 1rem;
+    word-spacing: -1px;
+    margin-left: 16px;
+}

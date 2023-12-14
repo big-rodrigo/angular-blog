@@ -1,0 +1,20 @@
+<app-title></app-title>
+<div class="posts">
+    <div class="main-post">
+        <app-main-post 
+            [id]="posts[0].id"
+            [title]="posts[0].title"
+            [description]="posts[0].description"
+            [imgUrl]="posts[0].imgUrl"
+        />
+    </div>
+    <div class="side-posts">
+        <app-post 
+            class="side-post" 
+            *ngFor="let sidePost of posts.slice(1)"
+            [id]="sidePost.id"
+            [title]="sidePost.title"
+            [imgUrl]="sidePost.imgUrl"
+        />
+    </div>
+</div>
